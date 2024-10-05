@@ -1,4 +1,3 @@
-Visual-Of-Perception
 Visual-Of-Perception is an interactive project management environment designed to visualize nodes as planets and galaxies in a dynamic 3D universe. Built using Three.js, the platform offers real-time collaboration, user-modifiable layouts, and customizable scenes for enhanced project visualization and control.
 
 Features
@@ -13,7 +12,7 @@ Installation
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/nyx4d/visual-of-perception.git
+git clone https://github.com/nyx4d/Visual-Of-Perception.git
 Open index.html in a browser to run the project locally.
 
 No dependencies are required outside of the included CDN links for Three.js.
@@ -36,7 +35,7 @@ CSS3: For styling the 3D environment.
 Three.js: Rendering the 3D scene and objects.
 JavaScript (ES5): All interactivity and logic for nodes, camera, and user inputs.
 License
-This project is licensed under a custom license VOP-1.0 – see the LICENSE file for details.
+This project is licensed under a custom license VPL-1.0 – see the LICENSE file for details.
 
 Contributing
 Feel free to fork the repository and submit pull requests. For major changes, please open an issue to discuss what you would like to change.
