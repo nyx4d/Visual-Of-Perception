@@ -1,12 +1,14 @@
-// Update mouse coordinates in the DOM
 function updateMouseCoords() {
     var mouseCoordsElement = document.getElementById('mouseCoords');
-    mouseCoordsElement.innerHTML = `X: ${mouse.x.toFixed(2)}, Y: ${mouse.y.toFixed(2)}`;
+    var xPixels = ((mouse.x + 1) / 2 * window.innerWidth).toFixed(2);
+    var yPixels = ((-mouse.y + 1) / 2 * window.innerHeight).toFixed(2);
+    mouseCoordsElement.innerHTML = `X: ${xPixels}px, Y: ${yPixels}px`;
 }
 
-// Update the scene volume in the DOM
+
 function updateSceneVolume() {
     var sceneVolumeElement = document.getElementById('sceneVolume');
-    var volume = (window.innerWidth * window.innerHeight * camera.position.z).toFixed(2);
-    sceneVolumeElement.innerHTML = `${volume} px³`;
+    var cameraZ = camera.position.z.toFixed(2);
+    var volume = (window.innerWidth * window.innerHeight * cameraZ).toFixed(2);
+    sceneVolumeElement.innerHTML = `${volume} px³ (Camera Z: ${cameraZ})`;
 }
